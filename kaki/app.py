@@ -175,6 +175,7 @@ class App(BaseApp):
         from kivy.core.window import Window
         lbl = Factory.Label(
             size_hint = (1, None),
+            color= (1,0,0,1),
             padding_y = 150,
             text_size = (Window.width - 100, None),
             text="{}\n\n{}".format(exc, tb or ""))
